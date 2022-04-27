@@ -18,3 +18,38 @@ TEST(PracticeTest, smoke_test)
 {
     ASSERT_TRUE(true);
 }
+
+TEST(PracticeTest, zzz_repeats)
+{
+	Practice testObject;
+
+	ASSERT_EQ(testObject.count_starting_repeats("zzz"), 3);
+}
+
+TEST(PracticeTest, ascending)
+{
+	Practice testObject;
+	int a = 1;
+	int b = 2;
+	int c = 3;
+	testObject.sortDescending(a, b, c);
+	ASSERT_EQ(a, 3);
+	ASSERT_EQ(b, 2);
+	ASSERT_EQ(c, 1);
+}
+
+TEST(PracticeTest, starting)
+{
+	Practice testObject;
+
+	ASSERT_EQ(testObject.count_starting_repeats("a"), 1);
+
+
+}
+
+/*TEST(PracticeTest, nighter)
+{
+	Practice testObject;
+	int sleep[7] = 0;
+	ASSERT_EQ(testObject.allnighter(sleep[7]), 0);
+}*/

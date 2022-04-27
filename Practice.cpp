@@ -96,6 +96,14 @@ int Practice::count_starting_repeats(string word)
 // However, if there are no such days found, the function should return nullptr.
 int* Practice::allnighter(int sleep[7])
 {
-
+/*   int*found = nullptr;
+for(int i = 0; i < 7; i++)
+{
+  if(sleep[i] == 0)
+  {
+	  found = &i;	  
+  }
+}
+return found;*/
 
 }
