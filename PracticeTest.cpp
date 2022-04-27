@@ -43,10 +43,27 @@ TEST(PracticeTest, starting)
 	Practice testObject;
 
 	ASSERT_EQ(testObject.count_starting_repeats("a"), 1);
+}
 
+TEST(PracticeTest, failStart)
+{
+	Practice testObject;
+	ASSERT_NE(testObject.count_starting_repeats("aZ"), 2);
 
 }
 
+TEST(PracticeTest, paliFail)
+{
+	Practice testObject;
+	ASSERT_NE(testObject.isPalindrome("palindrome"), false);
+}
+
+TEST(PracticeTest, paliSuccess)
+{
+	Practice testObject;
+	ASSERT_EQ(testObject.isPalindrome("racecar"), true);
+}
+			
 /*TEST(PracticeTest, nighter)
 {
 	Practice testObject;
